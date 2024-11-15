@@ -1,0 +1,142 @@
+* {
+
+  font-family: "Titillium Web", sans-serif !important;
+  
+}
+
+label {
+  color: #ddd;
+}
+
+.mt-4 {
+  color: #ddd;
+}
+
+.mt-5 {
+  color: #ddd;
+}
+
+.back {
+  background-color: #202746  ;
+}
+.navbar bg-body-tertiary {
+  background-color: #ddd;
+}
+
+/* Container for the background image */
+.background {
+  position: relative;
+  height: 70vh;
+  background-image: url('background_work.webp'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  /* transition: transform 0.5s ease-in-out; For zoom animation */
+
+}
+
+/* Blue overlay */
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 16, 111, 0.3); /* Blue with 30% opacity */
+  z-index: 1;
+}
+
+
+
+/* Ensures children are above the overlay */
+.background-content {
+  position: relative;
+  z-index: 2;
+  color: white; /* Text color to contrast the overlay */
+  text-align: center;
+  font-size: 1.5em;
+  margin-left: 7%;
+}
+
+.list-group-item{
+  color: #282c34 !important;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ 
+
+
+/* Modal container with animations */
+.modal {
+
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+  
+}
+
+
+
+.modal-header {
+  
+  background-color: #364068  ;
+  color: rgb(232, 232, 232);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-body {
+  background-color: #364068 ;
+  color: rgb(232, 232, 232);
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.close {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: rgb(232, 232, 232);
+}
+
